@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: cimg/node:20
+      - image: cimg/node:20.14
     parallelism: 4
     steps:
       - checkout
