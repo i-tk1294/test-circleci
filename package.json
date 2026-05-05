@@ -1,23 +1,10 @@
 {
-  "name": "test-circleci",
+  "name": "circleci-parallel-test",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "lint": "echo \"No lint\"",
-    "test": "echo \"No tests\"",
-    "build": "echo \"Build complete\""
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/i-tk1294/test-circleci.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/i-tk1294/test-circleci/issues"
-  },
-  "homepage": "https://github.com/i-tk1294/test-circleci#readme"
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
 }
