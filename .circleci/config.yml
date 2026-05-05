@@ -1,0 +1,22 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/node:20.0
+    steps:
+      - checkout
+
+      - run: npm install
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+
+      - store_artifacts:
+          path: dist
+          destination: dist
+
+workflows:
+  ci-workflow:
+    jobs:
+      - build
